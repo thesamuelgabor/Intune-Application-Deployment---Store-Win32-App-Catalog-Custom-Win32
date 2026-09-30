@@ -63,7 +63,7 @@ Packaged an internal line-of-business installer from scratch using the [Microsof
 
 #### 5. Verify on Device
 
-Confirmed all three apps installed automatically on `SG-Win11-Apps-Pilot` devices in Company Portal, with no user interaction required. This same set of three apps is what the [Autopilot Device Preparation](../03-Windows-Autopilot-Device-Preparation) project assigns to its device preparation policy.
+Confirmed all three apps installed automatically with no user interaction required.
 
 <img width="800" height="450" alt="image" src="docs/img/05-company-portal-verified.png" />
 
