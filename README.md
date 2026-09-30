@@ -22,27 +22,23 @@ The apps built here are assigned to the devices enrolled in Microsoft Entra Join
 
 #### 1. Deploy a Microsoft Store App
 
-Added Company Portal itself as a Store app, assigned as Required to `SG-Win11-Apps-Pilot`.
+Added Company Portal itself as a Store app, assigned as Required to `DG-Win11-Autopilot-Pilot`.
 
-<img width="800" height="450" alt="image" src="docs/img/01-store-app.png" />
+<img width="1662" height="852" alt="01-store-app" src="https://github.com/user-attachments/assets/4b6dcab4-f9fb-4365-919b-8e7c29033b01" />
 
 *Ref 1: Store app*
 
-#### 2. Deploy an App From the Win32 App Catalog
+#### 2. Deploy an App From the Enterprise App Catalog
 
-Selected a common third-party title (e.g. a PDF reader) directly from Intune's built-in Win32 app catalog — Microsoft maintains the packaging and version updates, so no manual `.intunewin` work was needed for this one.
+Selected a common third-party title directly from Intune's built-in Enterprise App Catalog - Microsoft maintains the packaging and version updates, so no manual `.intunewin` work was needed for this one.
 
-<img width="800" height="450" alt="image" src="docs/img/02-win32-catalog.png" />
+<img width="1625" height="872" alt="02-win32-catalog" src="https://github.com/user-attachments/assets/4a53f8b8-240a-4778-a37b-2c9be746b913" />
 
 *Ref 2: Win32 app catalog*
 
 #### 3. Package a Fully Custom Win32 App
 
-Packaged an internal line-of-business installer from scratch using the Win32 Content Prep Tool, since it isn't available in the catalog.
-
-```powershell
-IntuneWinAppUtil.exe -c "C:\Source" -s "install.exe" -o "C:\Output"
-```
+Packaged an internal line-of-business installer from scratch using the [Microsoft Win32 Content Prep Tool](https://github.com/microsoft/microsoft-win32-content-prep-tool) , since it isn't available in the catalog.
 
 | Setting | Value |
 |---|---|
@@ -72,7 +68,3 @@ Confirmed all three apps installed automatically on `SG-Win11-Apps-Pilot` device
 <img width="800" height="450" alt="image" src="docs/img/05-company-portal-verified.png" />
 
 *Ref 5: Verified installation*
-
-## About
-
-The three core Intune application delivery methods — Store, Win32 app catalog, and custom Win32 — packaged, deployed, and compared side by side.
