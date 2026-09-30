@@ -42,12 +42,12 @@ Packaged an internal line-of-business installer from scratch using the [Microsof
 
 | Setting | Value |
 |---|---|
-| Install command | `install.exe /quiet` |
-| Uninstall command | `uninstall.exe /quiet` |
-| Detection rule | MSI product code / registry key presence |
-| Requirement rule | Minimum OS: Windows 11 23H2, x64 only |
+| Install command | `vlc-3.0.24-win64.exe /S` |
+| Uninstall command | `%ProgramFiles(x86)%\VideoLAN\VLC\uninstall.exe /S` |
+| Detection rule | File or folder exists | %ProgramFiles(x86)%\VideoLAN\VLC\vlc.exe |
+| Requirement rule | Minimum OS: Windows 11 24H2 |
 
-<img width="800" height="450" alt="image" src="docs/img/03-custom-win32.png" />
+<img width="873" height="842" alt="03-custom-win32" src="https://github.com/user-attachments/assets/7ab985f3-9882-432b-9ee2-d69bc3b4aa6d" />
 
 *Ref 3: Custom Win32 packaging*
 
