@@ -1,4 +1,4 @@
-# Intune Application Deployment — Store, Win32 App Catalog & Custom Win32
+# Intune Application Deployment - Store, Win32 App Catalog & Custom Win32
 
 ## Objective
 
@@ -56,15 +56,7 @@ Packaged an internal line-of-business installer from scratch using the [Microsof
 | Method | Packaging effort | Update ownership | Best for |
 |---|---|---|---|
 | Store app | None | Microsoft / publisher | Modern, store-distributed apps |
-| Win32 app catalog | None — pre-packaged by Microsoft | Microsoft | Common third-party desktop apps |
+| Win32 app catalog | None - pre-packaged by Microsoft | Microsoft | Common third-party desktop apps |
 | Custom Win32 | Manual packaging + detection rules | You | Internal / line-of-business apps |
 
 *Ref 4: Deployment method comparison*
-
-#### 5. Verify on Device
-
-Confirmed all three apps installed automatically with no user interaction required.
-
-<img width="800" height="450" alt="image" src="docs/img/05-company-portal-verified.png" />
-
-*Ref 5: Verified installation*
